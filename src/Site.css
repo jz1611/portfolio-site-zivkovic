@@ -1,0 +1,9 @@
+#site-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#content-container {
+    margin: 0 0 0 145px;
+}

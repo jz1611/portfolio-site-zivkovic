@@ -1,0 +1,79 @@
+#navigation-container {
+    height: calc(100vh - 20px);
+    width: 125px;
+    position: fixed;
+    background: rgba(105, 105, 105, 0.281);
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    margin: 10px;
+    transition: all 0.2s linear;
+}
+
+#navigation-container:hover {
+    background: rgba(104, 104, 104, 0.363);
+    width: 250px;
+    transition: all 0.2s linear;
+}
+
+#navigation-container:hover .name {
+    font-size: 2.5rem;
+    transition: all 0.2s linear;
+}
+
+#navigation-container ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#navigation-container ul li {
+    padding-top: 25px;
+}
+
+.name {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+.sidebar-icon {
+    height: 75px;
+    filter: grayscale(1) invert(1);
+}
+
+.sidebar-option {
+    text-decoration: none;
+    padding: 10px;
+    width: 75px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+    border-radius: 20px;
+}
+
+.sidebar-option:hover {
+    background: rgba(211, 211, 211, 0.315);
+}
+
+.sidebar-option h2 {
+    display: none;
+    transition: all 0.2s linear;
+    font-size: 1.25em;
+    overflow: hidden;
+}
+
+#navigation-container:hover .sidebar-option {
+    width: 200px;
+    transition: all 0.2s linear;
+}
+
+#navigation-container:hover .sidebar-option h2 {
+    display: block;
+}
